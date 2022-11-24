@@ -47,23 +47,35 @@
             <div class="head-contact-form">
                 <div class="head-contact-1">
                     <small class="text-muted">Working hours</small>
+                    <hr class="border-bt">
                     <h5 class="mt-1">Monday To Friday</h5>
                     <h5>9:00 AM to 8:00 PM </h5>
                     <p class="text-muted">Our Support Team is available 24/7</p>
 
                 </div>
                 <div class="head-contact-1">
-                    <small class="text-muted">Contact Us</small>
-                    <h5  class="">020 7993 2905</h5>
+                    <small class="text-muted ">Contact Us</small>
+                    <hr class="border-bt">
+                    <h5  class="mt-1">020 7993 2905</h5>
                     <p class="text-muted">hello@finsweet.com</p>
                 </div>
             </div>
-            <form action="" id="formulario">
+            <div id="error" >
 
-                <input type="text" placeholder="Full Name" name="name" required>
-                <input type="text" placeholder="Your Email" name="email" required>
-                <input type="text" placeholder="Query Related " name="query"  required>
-                <textarea name="" placeholder="Message" id="" name="message"  ></textarea>
+            </div>
+            <form action="" id="formulario">
+                <input type="text" placeholder="Full Name" id="name" name="name" required>
+                <input type="text" placeholder="Your Email"  id="email" name="email" required>
+                <div class="caja">
+                    <select name="" id="">
+                        <option value="">Query Related</option>
+                        <option value="">Opcion 1</option>
+                        <option value="">Opcion 2</option>
+                    </select>
+                </div>
+                <textarea name="" placeholder="Message" id="message" name="message"  ></textarea>
+                <div></div>
+
                 <button type="submit" class="btn-primary">Send Message</button>
             </form>
         </div>

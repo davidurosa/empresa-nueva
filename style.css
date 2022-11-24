@@ -105,10 +105,11 @@ align-items: center;
 
 .nav-links a:last-child{
     background: white;
-    padding: 0.5rem 1.7rem;
+    padding: 0.6rem 2.2rem;
     color: #000;
     border: 2px solid transparent;
 transition: all ease 300ms;
+font-weight: bold;
 }
 
 .nav-links a:last-child:hover{
@@ -180,6 +181,15 @@ line-height: 64px;
 letter-spacing: -2px;
 
 }
+
+h5{
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;}
+
+
 h2{
     font-family: 'Sen';
     font-style: normal;
@@ -211,8 +221,10 @@ line-height: 48px;
     padding: 16px 48px;
     gap: 12px;
     color: #000;
+    font-weight: bold;
     background: #FFD050;
     cursor: pointer;
+    font-size: 1.3rem;
 }
 .btn-primary:hover{
     opacity: 0.8;
@@ -250,7 +262,7 @@ main{
 }
 .autor-icon{
     display: flex;
-    gap: 0.8rem;
+    gap: 1.2rem;
 }
 
 .linea{
@@ -557,6 +569,7 @@ footer{
             color: #000;
             background: #FFD050;
             cursor: pointer;
+
         }
       
         .container-footer{
@@ -600,9 +613,12 @@ footer{
     .container-contact{
         margin: 0 auto;
         text-align: center;
+        display: flex;
+        flex-direction: column;
         padding:6rem 6rem 2rem 6rem ;
         width: 70%;
-        gap: 1rem;
+        gap: 1.5rem;
+        margin-bottom: 1.5rem;
         
     }
 
@@ -623,11 +639,15 @@ footer{
         width: 60%;
     }
 
+    .border-bt{
+        border-bottom: solid #6A43B2  1px;
+        width:100%;
+    }
+
     .head-contact-1{
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        gap: 0.7rem;
+        gap: 0.3rem;
     }
     .head-contact-1 .text-muted{
         font-family: 'Inter';
@@ -652,12 +672,53 @@ opacity: 0.6;
    }
 
    .contact-form input{
-    height: 3rem;
+    height: 4.5rem;
     width: 100%;
     background: transparent;
     border: solid 1px gray;
     padding-left: 2rem;
     padding-right: 2rem;
+}
+
+.caja {
+    height: 4.5rem;
+    overflow: hidden;
+    width: 100%;
+    position:relative;
+ }
+ .contact-form select  {
+    background: transparent;
+    border: solid 1px gray;
+    font-size: 14px;
+    height: 4.5rem;
+    padding: 5px;
+    padding-left: 2rem;
+    width: 100%;  
+    -webkit-appearance: none;
+    -moz-appearance: none;
+ }
+ .contact-form select:focus{ outline: none;}
+ 
+  select::-ms-expand {
+    display: none;
+}
+ .caja::after{
+     content:"\025be";
+     display:flex;
+     justify-content: center;
+     align-items: center;
+     padding-top:7px;
+     text-align:center;
+     width:60px;
+     height:60px;
+     position:absolute;
+     top:0;
+     right:0px;	
+     pointer-events: none;
+ }
+
+.contact-form input::placeholder{
+  color: #000;
 }
 .contact-form textarea{
     width:100%;
@@ -666,11 +727,16 @@ opacity: 0.6;
     border: solid 1px gray;
   resize: none;
 }
+.contact-form textarea::placeholder{
+    color: #000;
+}
 .contact-form .btn-primary{
     text-align: center;
     display: flex;
     justify-content: center;
     width: 100%;
+    font-weight: bold;
+    font-size: 1.5rem;
     
 }
     /* ==============================contact Media query=========================== */
